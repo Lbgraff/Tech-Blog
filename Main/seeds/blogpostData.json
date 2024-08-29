@@ -1,0 +1,14 @@
+[
+  {
+    "name": "My First Front End App",
+    "description": "Creating Pantry Rescue for project 1 was really fun because I learned about HTML, CSS, and JavaScript."
+  },
+  {
+    "name": "Tech Survey",
+    "description": "Email me to let me know your favorite coding language"
+  },
+  {
+    "name": "Coding Games",
+    "description": "There are many games out there to help you learn to code."
+  }
+]
