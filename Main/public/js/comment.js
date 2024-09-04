@@ -4,7 +4,7 @@ const newFormHandler = async (event) => {
     const commentText = document.querySelector('#comment-name').value.trim();
   
     if (commentText) {
-      const response = await fetch(`/api/comment`, {
+      const response = await fetch(`/api/blogpost/comment`, {
         method: 'POST',
         body: JSON.stringify({ commentText }),
         headers: {
@@ -16,22 +16,6 @@ const newFormHandler = async (event) => {
         document.location.replace('/profile');
       } else {
         alert('Failed to create comment');
-      }
-    }
-  };
-  
-  const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-      const id = event.target.getAttribute('data-id');
-  
-      const response = await fetch(`/api/blogposts/${id}`, {
-        method: 'DELETE',
-      });
-  
-      if (response.ok) {
-        document.location.replace('/profile');
-      } else {
-        alert('Failed to delete comment');
       }
     }
   };
