@@ -28,3 +28,12 @@ main {
 nav {
   display: flex;
 }
+
+.no-button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: rgb(118, 209, 237);
+  text-decoration: none;
+  cursor: pointer;
+}
