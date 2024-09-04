@@ -1,4 +1,4 @@
-const router = require('../../Main/node_modules/express').Router();
+const router = require('express').Router();
 const { Blogpost } = require('../../Main/models');
 const withAuth = require('../../../utils/auth');
 
